@@ -4,25 +4,35 @@
   
     box-sizing: border-box;
 }
+body {
+      font-family: 'Arial', sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
 
-h1{
+    #taskInput {
+      padding: 8px;
+      width: 200px;
+    }
 
-    text-align: center;
-    margin: auto;
-    margin-top: 2rem;
-}
+    #taskList {
+      list-style-type: none;
+      padding: 0;
+    }
 
-.container
-{
-    font-size: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 1rem;
-}
+    .taskItem {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid #ccc;
+      padding: 8px;
+      margin: 8px 0;
+    }
 
-.container .question{
-    margin: 1rem;
-}
+    .taskItem button {
+      background-color: #ff3333;
+      color: #fff;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    } 

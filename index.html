@@ -1,28 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task List</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+<body>
 
-<body onload="getTimeOfDayGreeting()">
+<h2>To do List</h2>
+<div style="    margin: 22px;">
+<input type="text" id="taskInput" placeholder="Add a new task">
+<button onclick="addTask()">Add Task</button>
+</div>
 
-    <h1 id="greet"></h1>
-    <h1>Welcome to the Quiz!</h1>
-    <div class="container">
-        
-        <div class="question" id="ques"></div>
-        <div class="options" id="opt"></div>
-        <button  style="font-size: 15px; padding: 1px; margin: 1rem;"  onclick="checkAns()" id="btn">SUBMIT</button>
-        <div id="score"></div>
-        <script src="script.js"></script>
-    </div>
+<ul id="taskList"></ul>
 
-    <script src="./script.js"></script>
-
+<script src="./script.js"></script>
 </body>
-
 </html>
