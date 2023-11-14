@@ -1,25 +1,29 @@
-
 function addTask() {
-    const taskInput = document.getElementById("taskInput");
-    const taskList = document.getElementById("taskList");
+    const Fname = document.getElementById("Fname");
+    const Lname = document.getElementById("Lname");
+    const conList = document.getElementById("conList");
 
-    if (taskInput.value.trim() !== "") {
-      const taskItem = document.createElement("li");
-      taskItem.className = "taskItem";
+    if (Fname.value.trim() !== "") {
+      const contacts = document.createElement("li");
+      contacts.className = "contacts";
 
-      const taskText = document.createElement("span");
-      taskText.textContent = taskInput.value;
+      const FnameText = document.createElement("span");
+      FnameText.textContent = Fname.value;
+      const LnameText = document.createElement("span");
+      FnameText.textContent = Lname.value;
 
       const removeButton = document.createElement("button");
       removeButton.textContent = "Remove";
       removeButton.onclick = function () {
-        taskList.removeChild(taskItem);
+        conList.removeChild(contacts);
       };
 
-      taskItem.appendChild(taskText);
-      taskItem.appendChild(removeButton);
+      contacts.appendChild(FnameText);
+      contacts.appendChild(LnameText);
+      contacts.appendChild(removeButton);
 
-      taskList.appendChild(taskItem);
-      taskInput.value = ""; // Clear the input field after adding the task
+      conList.appendChild(contacts);
+      Fname.value = ""; // Clear the input field after adding the task
+      Lname.value = ""; // Clear the input field after adding the task
     }
   }

@@ -1,38 +1,38 @@
-*{
-    margin: 0;
-    padding: 0;
-  
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-      font-family: 'Arial', sans-serif;
-      text-align: center;
-      margin: 20px;
-    }
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  margin: 20px;
+}
 
-    #taskInput {
-      padding: 8px;
-      width: 200px;
-    }
+#taskInput {
+  padding: 8px;
+  width: 200px;
+}
 
-    #taskList {
-      list-style-type: none;
-      padding: 0;
-    }
+#conList {
+  list-style-type: none;
+  padding: 0;
+}
 
-    .taskItem {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border: 1px solid #ccc;
-      padding: 8px;
-      margin: 8px 0;
-    }
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+  margin: 8px 0;
+}
 
-    .taskItem button {
-      background-color: #ff3333;
-      color: #fff;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-    } 
+.contacts button {
+  background-color: #ff3333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
