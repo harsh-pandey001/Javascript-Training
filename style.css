@@ -9,22 +9,27 @@ body {
   text-align: center;
   margin: 20px;
 }
+.heading{
+  font-size: 25px;
+  text-transform: uppercase;
 
+}
 #taskInput {
   padding: 8px;
   width: 200px;
 }
 
+
 #conList {
   list-style-type: none;
   padding: 0;
+  border: 1px solid #000;
 }
 
 .contacts {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #ccc;
   padding: 8px;
   margin: 8px 0;
 }
