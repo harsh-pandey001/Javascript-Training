@@ -17,15 +17,21 @@
     <input type="text" id="Fname" placeholder="First Name">
     <input type="text" id="Lname" placeholder="Last Name">
     <input type="text" id="Phone" placeholder="Phone number">
-    <button onclick="addContact()">Add Contact</button>
+    <button id = "addcon" onclick="addContact()" >Add Contact</button>
   </div>
+
+
+
+  <div class="search">
+    <input type="text" id="searchInput" placeholder="Search contacts">
+  </div>
+  <button id="searchButton" onclick="searchContacts()">Search</button>
 
 
   <h2 style="padding: 1px; margin: 1rem;">Contact List </h2>
 
-  <input type="text" id="searchInput" oninput="searchContacts()" placeholder="Search contacts">
   <ul id="conList">
-    <li style="border: 1.5px solid #000; margin: 0px;"  class="contacts">
+    <li style="border: 1.5px solid #000; margin: 0px;" class="contacts">
       <span> First Name</span>
       <span> Last Name</span>
       <span> Phone Number</span>

@@ -19,7 +19,33 @@ body {
   width: 200px;
 }
 
+.search{
+  margin: 2rem 0px;
+}
 
+#searchInput,#Fname,#Lname,#Phone{
+  padding: 8px;
+  width: 200px;
+}
+
+#searchButton {
+  padding: 8px;
+  cursor: pointer;
+  background-color: #3381ff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+#addcon{
+  padding: 8px;
+  cursor: pointer;
+  background-color: rgb(51, 255, 71);
+  color: #000;
+  border: none;
+  cursor: pointer;
+  margin: 1rem;
+}
 #conList {
   list-style-type: none;
   padding: 0;
