@@ -20,6 +20,13 @@ p.then(response =>{
 })
 }
 
+// {
+// "location": { "name": "Mumbai", "region": "Maharashtra", "country": "India", "lat": 18.98, "lon": 72.83, "tz_id": "Asia/Kolkata", "localtime_epoch": 1703170629, "localtime": "2023-12-21 20:27" },
+
+// "current": { "last_updated_epoch": 1703169900, "last_updated": "2023-12-21 20:15", "temp_c": 29.0, "temp_f": 84.2, "is_day": 0, "condition": { "text": "Overcast", "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png", "code": 1009 }, "wind_mph": 3.8, "wind_kph": 6.1, "wind_degree": 290, "wind_dir": "WNW", "pressure_mb": 1013.0, "pressure_in": 29.91, "precip_mm": 0.0, "precip_in": 0.0, "humidity": 48, "cloud": 50, "feelslike_c": 31.7, "feelslike_f": 89.0, "vis_km": 2.5, "vis_miles": 1.0, "uv": 1.0, "gust_mph": 14.6, "gust_kph": 23.4 }
+//  }
+
+
 
 function updateHtml(data) {
     const dataContainer = document.getElementById('data-container');
@@ -68,16 +75,3 @@ function updateHtml(data) {
 
 
 
-
-
-
-
-
-
-
-
-// {
-// "location": { "name": "Mumbai", "region": "Maharashtra", "country": "India", "lat": 18.98, "lon": 72.83, "tz_id": "Asia/Kolkata", "localtime_epoch": 1703170629, "localtime": "2023-12-21 20:27" },
-
-// "current": { "last_updated_epoch": 1703169900, "last_updated": "2023-12-21 20:15", "temp_c": 29.0, "temp_f": 84.2, "is_day": 0, "condition": { "text": "Overcast", "icon": "//cdn.weatherapi.com/weather/64x64/night/122.png", "code": 1009 }, "wind_mph": 3.8, "wind_kph": 6.1, "wind_degree": 290, "wind_dir": "WNW", "pressure_mb": 1013.0, "pressure_in": 29.91, "precip_mm": 0.0, "precip_in": 0.0, "humidity": 48, "cloud": 50, "feelslike_c": 31.7, "feelslike_f": 89.0, "vis_km": 2.5, "vis_miles": 1.0, "uv": 1.0, "gust_mph": 14.6, "gust_kph": 23.4 }
-//  }
