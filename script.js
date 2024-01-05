@@ -1,5 +1,6 @@
 document.write("Practise of Settimeout and SetInterval, Promises")
 
+let Api_test = "http://api.weatherapi.com/v1/current.json?key=a18d009f33eb473d9c9175805231912&q=London&aqi=no"
 // setTimeout(code)
 // setTimeout(code, delay)
 
@@ -78,17 +79,66 @@ document.write("Practise of Settimeout and SetInterval, Promises")
 
 // -------------------------------Promises--------------------------------------------------
 
-let promise =  new Promise(function(resolve, reject) {
-   alert("I am an alert in promises")
-   resolve(90)
+let promise1 = new Promise(function (resolve) {
+  console.log("I am an alert in promises1")
+  resolve(90)
 })
+// console.log(promise1)
+let promise4 = new Promise(function (resolve) {
+  console.log("I am an alert in promises1")
+  resolve(100)
+})
+// console.log(promise1)
 
+
+let promise2 = fetch(Api_test)
+console.log(promise2)
+
+
+let tr = prompt("Enter some value");
+let promise3 = new Promise((resolve, reject) => {
+  if (tr > 5) {
+    // reject("value is greater")
+
+    throw new Error("value is big")
+    
+  }
+  else {
+    setTimeout(() => {
+      resolve(tr)
+    }, tr * 1000);
+  }
+});
+
+promise3.catch((error)=>{console.error(error)})
+// console.log(promise3)
+
+// let prom = [promise1,promise2,promise3]
+
+// Promise.all(prom).then((values)=>{
+//   console.log(values)
+// })
+
+// Promise.allSettled(prom).then((results) =>
+// console.log(results)
+// );
+
+// Promise.allSettled(prom).then((values)=>
+//   values.forEach((result) => console.log(result.status))
+// )
+
+// Promise.any(promise1,promise4).then((values)=>{
+//   console.log(values)
+// })
 // asynchronus nature of javascript 
-console.log("1")
-setTimeout(() => {
-  console.log("2")
-}, 2000);
-console.log("3")
+// console.log("1")
+// setTimeout(() => {
+//   console.log("2")
+// }, 2000);
+// console.log("3")
 
-console.log(promise)
+// console.log(promise)
+
+
+
 

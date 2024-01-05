@@ -6,9 +6,9 @@
 //     console.log(data);
 //  })
 
-// hoisting
+// // hoisting
 // console.log(a)
-// console.log(new Rectangle(5, 8).area());
+// // console.log(new Rectangle(5, 8).area());
 
 // var a = 55;
 // // console.log(b);
@@ -39,15 +39,39 @@
 
 
 // Runtime Error Example
-let x = 10;
-let y = 0;
-let result;
+// let x = 10;
+// let y = 0;
+// let result;
 
 
-result = x / y; // Division by zero
-console.log(result);
+// result = x / y; // Division by zero
+// console.log(result);
 // try {
 
 // } catch (error) {
 //   console.error("Runtime Error:", error.message);
 // }
+
+// const apis = "http://api.weatherapi.com/v1/current.json?key=a18d009f33eb473d9c9175805231912&q=London&aqi=no"
+
+// const user = fetch(apis)
+
+// user.then(response =>{
+//     console.log(response.status);
+//     console.log(response.type);
+//     return response.json();
+// }).then(data =>{
+//     console.log(data)
+// })
+
+// console.log(user)
+
+// try{
+//     console.log(this)
+// }catch(errro){
+//     console.error(errro)
+// }
+
+
+
+
