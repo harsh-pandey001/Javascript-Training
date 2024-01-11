@@ -1,4 +1,5 @@
 //------------------ Lexical Scope------------------- 
+
 // function a(){
 // console.log(x);
 // }
@@ -87,16 +88,42 @@
 //   }
 //   console.log(x);
 
-function b(){
-        var a = 99;
-        function n() {
-            console.log(a)
-        }
-        return n
-    }
-   var x = b()
+// function b(){
+//         var a = 99;
+//         function n() {
+//             console.log(a)
+//         }
+//         return n
+//     }
+//    var x = b()
    
-   console.log(x)
+//    console.log(x)
 
-   x()
+//    x()
+
+
+
+//-----------------closure use cases-----------------------
+
+// Data Privacy 
+
+// function createCounter() {
+//   let count = 0;
+//   return function() {
+//     count++;
+//     console.log(count);
+//   };
+// }
+
+// here we cant directly access the count variable 
+// console.log(createCounter()())
+// let test = createCounter()
+
+// test()
+// test()
+
+// Function factories
+
+
+
 

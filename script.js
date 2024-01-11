@@ -162,15 +162,17 @@ document.write("Practise of Settimeout and SetInterval, Promises")
 
 // delayedGreet('Alice', saySeeYou);
 
-function f() {
-  const x = {};
-  const y = {};
-  x.a = y; // x references y
-  y.a = x; // y references x
+// function f() {
+//   const x = {};
+//   const y = {};
+//   x.a = y; // x references y
+//   y.a = x; // y references x
 
-  console.log("harsh")
-  return "azerty";
-}
+//   console.log("harsh")
+//   return "azerty";
+// }
 
-f();
+// f();
+
+
 
