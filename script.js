@@ -118,18 +118,30 @@ promise3.catch((error)=>{console.error(error)})
 // Promise.all(prom).then((values)=>{
 //   console.log(values)
 // })
+// Promise.all(prom)returned promise fulfills when all of the input's promises fulfill (including when an empty iterable is passed), with an array of the fulfillment values. It rejects when any of the input's promises rejects, with this first rejection reason.
+
+
 
 // Promise.allSettled(prom).then((results) =>
 // console.log(results)
 // );
+// The Promise.allSettled() static method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when all of the input's promises settle (including when an empty iterable is passed), with an array of objects that describe the outcome of each promise.
 
 // Promise.allSettled(prom).then((values)=>
 //   values.forEach((result) => console.log(result.status))
 // )
 
+
+
 // Promise.any(promise1,promise4).then((values)=>{
 //   console.log(values)
 // })
+// The Promise.any() static method takes an iterable of promises as input and returns a single Promise. This returned promise fulfills when any of the input's promises fulfills, with this first fulfillment value. It rejects when all of the input's promises reject (including when an empty iterable is passed), with an AggregateError containing an array of rejection reasons.
+
+
+
+
+
 // asynchronus nature of javascript 
 // console.log("1")
 // setTimeout(() => {
@@ -139,6 +151,24 @@ promise3.catch((error)=>{console.error(error)})
 
 // console.log(promise)
 
+
+// -------------------------------------------------------async and await--------------------------------------
+
+
+
+async function Ausis(){
+  
+  return await fetch(Api_test);
+
+}
+
+
+Ausis().then((response)=>{
+  console.log(response.status);
+  return response.json()
+}).then((data)=>{
+  console.log(data)
+})
 
 
 
