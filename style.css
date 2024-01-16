@@ -67,3 +67,10 @@ body {
   padding: 5px 10px;
   cursor: pointer;
 }
+
+.container{
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
