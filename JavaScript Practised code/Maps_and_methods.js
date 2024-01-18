@@ -149,9 +149,9 @@ const return_name =  Map.groupBy(inventory, (product)=>  product.name);
 const result2 = Map.groupBy(data,(person)=> person.department == "Sales")
 
 
-console.log(result2.get(true)) // it will return the array object containing sales department
+// console.log(result2.get(true)) // it will return the array object containing sales department
 
-console.log(return_type.has("meat")) //true
+// console.log(return_type.has("meat")) //true
 
 // console.log(return_quantity)
 
@@ -160,6 +160,7 @@ console.log(return_type.has("meat")) //true
 // return_type.forEach(element => {
 //   console.log(element)
 // });
+
 
 
 
