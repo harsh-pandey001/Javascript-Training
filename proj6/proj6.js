@@ -43,11 +43,22 @@ function displayQuiz() {
     console.log(myQuestions[qcount].question);
     quizContainer.textContent = myQuestions[qcount].question
 
-    myQuestions[qcount].answers.forEach(element => {
-     console.log(element.a);
-            
-    });
-    document.getElementById('btnStart').style.display = "none"
+    for (let i = 0; i < myQuestions[qcount].answers.length; i++) {
+		const choicesdiv = document.createElement("div");
+		const choice = document.createElement("input");
+		const choiceLabel = document.createElement("label");
+
+		choice.type = "radio";
+		choice.name = "answer";
+		choice.value = i;
+
+		choiceLabel.textContent = myQuestions[qcount].a[i].text;
+
+		choicesdiv.appendChild(choice);
+		choicesdiv.appendChild(choiceLabel);
+		opt.appendChild(choicesdiv);
+	}    document.getElementById('btnStart').style.display = "none"
+    
 
 }
 
