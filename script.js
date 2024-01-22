@@ -1,5 +1,6 @@
-document.write("Practise of Settimeout and SetInterval, Promises")
+// document.write("Practise of Settimeout and SetInterval, Promises")
 
+// let Api_test = "http://api.weatherapi.com/v1/current.json?key=a18d009f33eb473d9c9175805231912&q=London&aqi=no"
 // setTimeout(code)
 // setTimeout(code, delay)
 
@@ -8,10 +9,13 @@ document.write("Practise of Settimeout and SetInterval, Promises")
 // let a = setTimeout(function(){
 //   alert("i am harsh")
 // },2000)
+
 // let b =  prompt("Do you want to run the setTimeout ? ")
+
 // if("n" == b){
 //   clearTimeout(a)
 // }
+
 // console.log(a);
 
 
@@ -70,106 +74,6 @@ document.write("Practise of Settimeout and SetInterval, Promises")
 
 // setTimeout(clearInterval(b), 20000)
 // clearInterval(b)
-
-
-
-// -------------------------------Promises--------------------------------------------------
-
-// let promise =  new Promise(function(resolve, reject) {
-//    alert("I am an alert in promises")
-//    resolve(90)
-// })
-
-// // asynchronus nature of javascript 
-// console.log("1")
-// setTimeout(() => {
-//   console.log("2")
-// }, 2000);
-// console.log("3")
-
-// console.log(promise)
-
-
-// let obj = {
-//   name : "harsh"
-// }
-
-// console.log(obj.name)
-
-// obj = null 
-
-// console.log(obj)
-
-//now name is unreachable 
-
-
-// let obj = {
-//   name : "harsh"
-// }
-
-// console.log(obj.name)
-
-// let obj1 = obj
-
-// const obj2 = {
-//   name : "Anshu"
-// }
-
-
-// console.log(obj1.name)
-
-// obj = null 
-
-
-// console.log(obj2.name)
-
-
-//memory leak 
-
-// let array = [];
-
-// for (i = 5; i > 1; i++){
-//   array.push(i - 1);
-// }
-
-// function greet(name, callback) {
-//   console.log(`Hello, ${name}!`);
-//   callback(); // The callback function is executed immediately after greeting
-// }
-
-// function sayGoodbye() {
-//   console.log('Goodbye!');
-// }
-
-// greet('John', sayGoodbye);
-
-
-// asyncronus callback function 
-
-// function delayedGreet(name, callback) {
-//   setTimeout(function () {
-//     console.log(`Delayed Hello, ${name}!`);
-//     callback(); // The callback function is executed after a delay
-//   }, 3000);
-// }
-
-// function saySeeYou() {
-//   console.log('See you later!');
-// }
-
-// delayedGreet('Alice', saySeeYou);
-
-// function f() {
-//   const x = {};
-//   const y = {};
-//   x.a = y; // x references y
-//   y.a = x; // y references x
-
-//   console.log("harsh")
-//   return "azerty";
-// }
-
-// f();
 
 
 
