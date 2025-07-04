@@ -1,0 +1,5 @@
+# Dependencies
+node_modules/
+
+# Claude AI files
+CLAUDE.md
